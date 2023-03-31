@@ -5,7 +5,7 @@
 ## 3.1 Understanding Docker Container Lifecycle
 ![image](https://user-images.githubusercontent.com/121426292/229112068-8cd4059d-02d3-4919-9a01-1b1cc0655fcf.png)
    
-## 3.2 Docker Command Reference
+## 3.2 Working with Docker Client
    1. [Pull/Download an image from a registry](Download an image from a registry)
       ```
       docker pull <image_name>
@@ -73,7 +73,7 @@
       docker image push registry-host:5000/myadmin/rhel-httpd:latest
       docker image push --all-tags registry-host:5000/myname/myimage
       ```
-      
+
 ## 3.3 Docker: Reference Links
    - [Docker Overiew](https://docs.docker.com/get-started/overview/)
    - [Docker Desktop](https://docs.docker.com/desktop/)
