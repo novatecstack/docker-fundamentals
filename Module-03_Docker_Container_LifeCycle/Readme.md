@@ -50,7 +50,30 @@
       docker rmi bindeshImage:v1
       docker rmi -f fd48423244f 
       ```
-   
+   9. [Kill one or more running containers](https://docs.docker.com/engine/reference/commandline/kill/)  
+      ```
+      docker kill [OPTIONS] CONTAINER [CONTAINER...]
+      
+      docker kill bindeshContainer
+      ```
+   10. [Log in to a registry](https://docs.docker.com/engine/reference/commandline/login/)
+      ```
+      docker login [OPTIONS] [SERVER]
+      
+      Examples:
+      docker login novatecserver:8080
+      cat ~/my_password.txt | docker login --username foo --password-stdin
+      
+      ```
+   12. [Upload an image to a registry](Upload an image to a registry)
+      ```
+      docker push [OPTIONS] NAME[:TAG]
+      
+      Examples:
+      docker image push registry-host:5000/myadmin/rhel-httpd:latest
+      docker image push --all-tags registry-host:5000/myname/myimage
+      ```
+      
 ## 3.3 Docker: Reference Links
    - [Docker Overiew](https://docs.docker.com/get-started/overview/)
    - [Docker Desktop](https://docs.docker.com/desktop/)
