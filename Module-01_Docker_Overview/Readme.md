@@ -37,5 +37,12 @@
 <img src="https://user-images.githubusercontent.com/121426292/229060643-2c4f6083-20c2-4e61-9be0-b218bb2ac663.png" data-canonical-src="[https://user-images.githubusercontent.com/121426292/229060643-2c4f6083-20c2-4e61-9be0-b218bb2ac663.png]([https://user-images.githubusercontent.com/121426292/229057732-3942c29f-70ec-4aa0-9a4a-481d83fa3ed7.png](https://user-images.githubusercontent.com/121426292/229060643-2c4f6083-20c2-4e61-9be0-b218bb2ac663.png))" width="800" height="500" />
 
 ## Docker: The underlying technology
+   - Docker is written in the Go programming language and takes advantage of several features of the Linux kernel to deliver its functionality
+   - Docker uses a technology called **Namespaces** to provide the isolated workspace called the *Container*
+   - When you run a container, Docker creates a set of namespaces for that container
+   - These namespaces provide a layer of isolation
+   - Each aspect of a container runs in a separate namespace and its access is limited to that namespace
 
 ## Docker: Editions (CE and EE)
+![image](https://user-images.githubusercontent.com/121426292/229061927-d0ae0010-9aab-4b48-a672-eb2b696bade8.png )
+
