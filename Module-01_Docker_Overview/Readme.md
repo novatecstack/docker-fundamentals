@@ -34,7 +34,7 @@
    5. Scalable
 
 ## Docker: Architecture
-   
+<img src="https://user-images.githubusercontent.com/121426292/229060643-2c4f6083-20c2-4e61-9be0-b218bb2ac663.png" data-canonical-src="[https://user-images.githubusercontent.com/121426292/229060643-2c4f6083-20c2-4e61-9be0-b218bb2ac663.png]([https://user-images.githubusercontent.com/121426292/229057732-3942c29f-70ec-4aa0-9a4a-481d83fa3ed7.png](https://user-images.githubusercontent.com/121426292/229060643-2c4f6083-20c2-4e61-9be0-b218bb2ac663.png))" width="800" height="500" />
 
 ## Docker: The underlying technology
 
