@@ -60,9 +60,11 @@
    3. **Docker Image** : A Docker image is a read-only template with instructions for creating a Docker container
 
    4. **Docker Container** : A Container is a runnable instance of a docker image. We can create, start, stop, move, or delete a container using docker API or command line
-   5. **Docker Registry**: A Docker registry stores Docker images. *Docker Hub*  is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. You can even run your own private registry
+   5. **Docker Registry** : A Docker registry stores Docker images. *Docker Hub*  is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. You can even run your own private registry
    
-   6. **Docker Obects**: : 
+   6. **Docker Obects** :
+   
+<img src="https://user-images.githubusercontent.com/121426292/229129692-05b84bd5-7f82-4649-8761-e5d98618f8f4.png" data-canonical-src="https://user-images.githubusercontent.com/121426292/229129692-05b84bd5-7f82-4649-8761-e5d98618f8f4.png" width="350" height="200" />
    
 ## 1.10 Docker: Reference Links
    - [Docker Overiew](https://docs.docker.com/get-started/overview/)
