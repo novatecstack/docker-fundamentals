@@ -26,7 +26,6 @@
    
 ![image](https://user-images.githubusercontent.com/121426292/229056677-9e84fed7-d02c-49f7-b26b-40743a9eab63.png)
 
-
 ## Advantages of running application in Docker Containers
    1. **Standard**: Docker created the industry standard for containers, so they could be portable anywhere
    2. **Lightweight**: Containers share the machine’s OS system kernel and therefore do not require an OS per application, driving higher server efficiencies and reducing server and licensing costs
@@ -49,3 +48,10 @@
 
 ## Docker: Editions (CE and EE)
 ![image](https://user-images.githubusercontent.com/121426292/229061927-d0ae0010-9aab-4b48-a672-eb2b696bade8.png )
+
+
+## Docker Desktop vs Docker Engine
+
+## Docker: Key Terminologies
+
+## Docker: Reference Links
