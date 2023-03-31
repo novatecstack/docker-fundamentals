@@ -31,15 +31,15 @@
    1. **Standard**: Docker created the industry standard for containers, so they could be portable anywhere
    2. **Lightweight**: Containers share the machine’s OS system kernel and therefore do not require an OS per application, driving higher server efficiencies and reducing server and licensing costs
    3. **Secure**: Applications are safer in containers and Docker provides the strongest default isolation capabilities in the industry
-   4. Loosely coupled
-   5. Scalable
+   4. **Loosely coupled**
+   5. **Scalable**
 
 
 ## Docker: Architecture
 <img src="https://user-images.githubusercontent.com/121426292/229060643-2c4f6083-20c2-4e61-9be0-b218bb2ac663.png" data-canonical-src="[https://user-images.githubusercontent.com/121426292/229060643-2c4f6083-20c2-4e61-9be0-b218bb2ac663.png]([https://user-images.githubusercontent.com/121426292/229057732-3942c29f-70ec-4aa0-9a4a-481d83fa3ed7.png](https://user-images.githubusercontent.com/121426292/229060643-2c4f6083-20c2-4e61-9be0-b218bb2ac663.png))" width="800" height="500" />
 
 
-## Docker: The underlying technology
+## Docker: The underlying Technology
    - Docker is written in the Go programming language and takes advantage of several features of the Linux kernel to deliver its functionality
    - Docker uses a technology called **Namespaces** to provide the isolated workspace called the *Container*
    - When you run a container, Docker creates a set of namespaces for that container
@@ -49,4 +49,3 @@
 
 ## Docker: Editions (CE and EE)
 ![image](https://user-images.githubusercontent.com/121426292/229061927-d0ae0010-9aab-4b48-a672-eb2b696bade8.png )
-
