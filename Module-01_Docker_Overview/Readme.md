@@ -53,5 +53,18 @@
 ## Docker Desktop vs Docker Engine
 
 ## Docker: Key Terminologies
+   1. **Docker Daemon or Docker Engine** : The Docker Daemon (dockerd) listens for the Docker API requests and manages Docker objects, such as images, containers, networks and volumes
 
+   2. **Docker Client** : Docker client is a CLI program that can be present on the Docker host or any other machine. IT is the primary way that to interact with Docker daemon over docker APIs
+
+   3. **Docker Image** : A Docker image is a read-only template with instructions for creating a Docker container
+
+   4. **Docker Container** : A Container is a runnable instance of a docker Image. We can create, start, stop, move, or delete a container using docker API or command line
+   5. **Docker Registry**: A Docker registry stores Docker images. *Docker Hub*  is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. You can even run your own private registry
+   
+   6. **Docker Obects**: : 
+   
+   
+
+   
 ## Docker: Reference Links
