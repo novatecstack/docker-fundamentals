@@ -1,10 +1,15 @@
 # Docker Compose
   - Compose is a tool for defining and running multi-container Docker applications.
-  - With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration.
-
+  - With Compose, you use a YAML file to configure your application’s services.
+  - Then, with a single command, you create and start all the services from your configuration.
+  - Here are the key steps :
+    1) Define `Dockerfile` for your app’s environment.
+    2) Define `docker-compose.yml` for the services that make up your app services.
+    3) Run `docker-compose up` and Compose starts and runs your entire app.
+       
 ## 7.1 The `docker-compose.yml` file explained
    - In `docker-compose.yml` file, we need to specify the version of the Compose file, at least one service, and optionally volumes and networks.
-   - Structure of the compose file is as follows:
+   - Structure of the `docker-compose.yml` file is as follows:
      ```
       version: "3.x"
       services:
@@ -46,3 +51,7 @@
    4) Setting Up the Volume
 
 ## 7.3 `docker-compose.yml` - *Environment Variables* in action
+
+## 7.4 Scale the Containerized App through the `docker-compose scale`
+
+## 7.5 Real World Application
