@@ -46,6 +46,10 @@
  
 ## 7.2 `docker-compose.yml` - *Services* Deep Dive
    1) Pulling an Image
+      ```
+      # If the image is already published in the registry (DockerHub/ACR/ECR)
+
+      ```
    2) Building an Image
    3) Configuring the Network
    4) Setting Up the Volume
@@ -54,4 +58,33 @@
 
 ## 7.4 Scale the Containerized App through the `docker-compose scale`
 
+## 7.5 Docker Compose Commands
+   - Deploy the application
+     ```
+     # Create and start the Containers, Networks, and the Volumes defined in the configuration
+     docker-compose up
+
+     # Run the application in the background as a daemon when launched with the -d option
+     docker-compose up -d
+
+     # Docker Build + Docker Run
+     docker-compose up --build
+     ```
+   - Start the Application Containers
+     ```
+     # After the first time, you can simply use 'start' to start the services
+     docker-compose start
+
+     # If docker compose config file has a different name than the default one (docker-compose.yml), you can use -f or ––file flags to specify an alternate file name
+     docker-compose -f custom-compose-file.yml start
+     ```
+   - Stop all the containers in an Application
+     ```
+     docker-compose stop
+     ``` 
+   - Scale the Application
+     ```
+     Syntax: docker-compose scale <service name> = <no of instances>
+     Example: docker-compose scale redis-master=3
+     ``` 
 ## 7.5 Real World Application
