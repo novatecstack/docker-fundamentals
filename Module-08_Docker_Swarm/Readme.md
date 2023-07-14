@@ -42,11 +42,10 @@
 
 ## 8.4 Setting up the Docker Swarm cluster - Installation & Config
    - For this lab, I will create 3 VM Instance in AWS/Azure/GCP - 1 Manager and other 2 Worker nodes. Make sure that all the VMs are in the same region and same virtual network
-   - Install Docker on all the nodes and make sure the docker daemon is running.
-   - Networks Specifications
+   1) Install Docker on all the nodes and make sure the docker daemon is running.
+   2) Networks Specifications
      You need the following ports open to traffic to and from each Docker host participating on an overlay network:
      1) TCP port 2377 for cluster management communications
      2) TCP and UDP port 7946 for communication among nodes
      3) UDP port 4789 for overlay network traffic
-   
-   - docker swarm init --advertise-addr <manager_ip>
+   3) docker swarm init --advertise-addr <manager_ip>
