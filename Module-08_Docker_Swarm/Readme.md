@@ -41,7 +41,7 @@
       - If the leader node becomes unavailable due to an outage or failure, a new leader node can be elected using the Raft consensus algorithm.
 
 ## 8.4 Setting up the Docker Swarm cluster - Installation & Config
-   - For this lab, I will create 3 VM Instance in AWS/Azure/GCP - 1 Manager and other 2 Worker nodes. Make sure that all the VMs are in the same region and same virtual network
+   For this lab, I will create three Virtual Machines in AWS/Azure/GCP - one Manager and other two Worker nodes. Make sure that all the VMs are in the same region and same virtual network
    1) Install Docker on all the nodes and make sure the docker daemon is running.
    2) Networks Specifications
      You need the following ports open to traffic to and from each Docker host participating on an overlay network:
