@@ -21,7 +21,7 @@
      sudo mv /usr/local/bin/docker-compose /usr/bin/docker-compose
      
      # Update the permission of executable
-     sudo chmod +x /usr/local/bin/docker-compose
+     sudo chmod +x /usr/bin/docker-compose
 
      # Verify success
        docker-compose version
