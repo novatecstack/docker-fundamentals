@@ -1,10 +1,14 @@
 # 8.1 Docker Swarm Overview
+
+<img src="https://user-images.githubusercontent.com/121426292/233589481-05a5282c-7186-41a6-bfa3-b4ec329a3948.png" width="300" height="250">
+
   - Docker swarm is a container orchestration tool, meaning that it allows the user to manage multiple containers deployed across multiple host machines.
   - It helps end-users in creating and deploying application in a cluster of Docker nodes (virtual or physical machines).
   - Each node of a Docker Swarm is a Docker daemon, and all Docker daemons interact using the Docker API. 
   - Each container within the Swarm can be deployed and accessed by nodes of the same cluster. 
   - Some other open source orchestration solutions are: <b>*Docker Swarm, Kubernetes, Apache Mesos, OPENSHIFT, Nomad etc.* </b>
-<img src="https://user-images.githubusercontent.com/121426292/233589481-05a5282c-7186-41a6-bfa3-b4ec329a3948.png" width="300" height="250">
+  - Current versions of Docker include swarm mode for natively managing a cluster of Docker Engines called a swarm
+  - Use the Docker CLI to create a swarm, deploy application services to a swarm, and manage swarm behavior
 
 ## 8.2 Container Orchestration tool's main responsibilities
    - Provisioning and deployment of containers
@@ -21,11 +25,20 @@
 ## 8.3 Docker Swarm: Architecture
    The Swarm architecture includes below components:
    1) <b>*Swarm*</b>: A set of nodes with at least one master node and several worker nodes that can be virtual or physical machines.
-   2) <b>*Service*</b>:
+   2) <b>*Service*</b>
       - The tasks defined by a swarm administrator that a manager or agent nodes must perform.
       - It also defines which container images the swarm should use and which commands the swarm will run in each container.
-   3) <b>*Manager Node*</b>:
-   4) <b>*Worker Node*</b>:
+   3) <b>*Manager Node*</b>
+      - The primary function of Manager node is to assign tasks to Worker nodes in the swarm.
+      - It also help to carry out some of the managerial tasks.
+   4) <b>*Worker Node*</b>
+      - Worker nodes run tasks distributed by the manager node in the swarm.
+      - Each worker node runs an agent that reports back to the master node about the state of the tasks assigned to it, so the manager node can keep track of services and tasks running in the swarm.
+      - By default, all manager nodes are also worker nodes and are capable of executing tasks when they have the resources available to do so.
+   5) <b>*Leader Node*</b>
+      - When a cluster is formed, the <b>*Raft Consensus Algorithm*</b> is used to assign one of the node as the <b>*Leader node*</b>.
+      - The leader node makes all of the swarm management and task orchestration decisions for the swarm.
+      - If the leader node becomes unavailable due to an outage or failure, a new leader node can be elected using the Raft consensus algorithm.
 
 ## 8.2 Docker Swarm: Key Terminologies
   - Docker container 
